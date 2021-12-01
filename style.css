@@ -1,0 +1,21 @@
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("./assets/images/1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.imgStory {
+  background-image: url("./assets/images/1.jfif");
+  background-size: cover;
+  background-position: center;
+}
+
+.divider {
+  border-bottom: 1px dotted #aaa;
+  flex-grow: 1;
+  align-self: center;
+  margin: 0 10px;
+}
