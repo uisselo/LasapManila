@@ -8,30 +8,6 @@
 ?>
 
 <body>
-  <?php
-    
-    $conn = mysqli_connect("localhost","root","","reservations");
-    
-    if ($conn->connect_error) {
-      die("Connection failed: " . $conn->connect_error);
-    }
-
-    // $sql = "SELECT reservation_id, full_name, email, contact_no, booked_date, numOfPpl, instructions FROM tables";
-    // $result = $conn->query($sql);
-
-    // if ($result->num_rows > 0) {
-    //   while ($row = $result->fetch_assoc()) {
-    //     echo '<div class="container mt-5">';
-    //     echo "name: " . $row["full_name"];
-    //     echo '</div>';
-    //   }
-    // } else {
-    //   echo "No Result";
-    // }
-
-    $conn->close();
-
-  ?>
   <!-- Book a Table Modal Form -->
   <div class="modal fade py-5" id="table">
     <div class="modal-dialog modal-lg" role="document">
@@ -47,33 +23,36 @@
         </div>
 
         <div class="modal-body p-5 pt-0">
-          <form class="">
+          <form method="POST">
             <div class="form-floating mb-3">
               <input
                 type="text"
                 class="form-control rounded-4"
-                id="name"
+                id="nameA"
+                name="nameA"
                 placeholder="Juan Dela Cruz"
               />
-              <label for="name">Full Name</label>
+              <label for="nameA">Full Name</label>
             </div>
             <div class="form-floating mb-3">
               <input
                 type="email"
                 class="form-control rounded-4"
-                id="email"
+                id="emailA"
+                name="emailA"
                 placeholder="name@example.com"
               />
-              <label for="email">Email Address</label>
+              <label for="emailA">Email Address</label>
             </div>
             <div class="form-floating mb-3">
               <input
                 type="text"
                 class="form-control rounded-4"
-                id="contact"
+                id="contactA"
+                name="contactA"
                 placeholder="Contact Number"
               />
-              <label for="contact">Contact Number</label>
+              <label for="contactA">Contact Number</label>
             </div>
             <div class="row g-2 mb-3">
               <div class="col-md">
@@ -81,15 +60,16 @@
                   <input
                     type="date"
                     class="form-control"
-                    id="date"
+                    id="dateA"
+                    name="dateA"
                     placeholder="MM/DD/YY"
                   />
-                  <label for="date">Date</label>
+                  <label for="dateA">Date</label>
                 </div>
               </div>
               <div class="col-md">
                 <div class="form-floating">
-                  <select class="form-select" id="numOfPpl">
+                  <select class="form-select" id="numOfPplA" name="numOfPplA">
                     <option selected disabled>Choose number of people</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -97,30 +77,30 @@
                     <option value="4">4</option>
                     <option value="5">5</option>
                   </select>
-                  <label for="numOfPpl">Number of People</label>
+                  <label for="numOfPplA">Number of People</label>
                 </div>
               </div>
             </div>
-
             <div class="form-floating mb-3">
               <textarea
                 type="text"
                 class="form-control rounded-4"
-                id="instructions"
+                id="instructionsA"
+                name="instructionsA"
                 placeholder="Instructions"
                 style="height: 100px"
               ></textarea>
-              <label for="instructions"
+              <label for="instructionsA"
                 >Instructions
                 <small class="text-muted">(Optional)</small></label
               >
             </div>
-            <button
-              class="w-100 btn btn-lg rounded-4 btn-primary"
+            <input
+              class="w-100 btn btn-lg rounded-4 btn-secondary"
               type="submit"
-            >
-              Finish
-            </button>
+              name="submitA"
+              value="Complete"
+            />
           </form>
         </div>
       </div>
@@ -142,33 +122,36 @@
         </div>
 
         <div class="modal-body p-5 pt-0">
-          <form class="">
+          <form method="POST">
             <div class="form-floating mb-3">
               <input
                 type="text"
                 class="form-control rounded-4"
-                id="name"
+                id="nameB"
+                name="nameB"
                 placeholder="Juan Dela Cruz"
               />
-              <label for="name">Full Name</label>
+              <label for="nameB">Full Name</label>
             </div>
             <div class="form-floating mb-3">
               <input
                 type="email"
                 class="form-control rounded-4"
-                id="email"
+                id="emailB"
+                name="emailB"
                 placeholder="name@example.com"
               />
-              <label for="email">Email Address</label>
+              <label for="emailB">Email Address</label>
             </div>
             <div class="form-floating mb-3">
               <input
                 type="text"
                 class="form-control rounded-4"
-                id="contact"
+                id="contactB"
+                name="contactB"
                 placeholder="Contact Number"
               />
-              <label for="contact">Contact Number</label>
+              <label for="contactB">Contact Number</label>
             </div>
             <div class="row g-2 mb-3">
               <div class="col-md">
@@ -176,15 +159,16 @@
                   <input
                     type="date"
                     class="form-control"
-                    id="date"
+                    id="dateB"
+                    name="dateB"
                     placeholder="MM/DD/YY"
                   />
-                  <label for="date">Date</label>
+                  <label for="dateB">Date</label>
                 </div>
               </div>
               <div class="col-md">
                 <div class="form-floating">
-                  <select class="form-select" id="time">
+                  <select class="form-select" id="time" name="time">
                     <option selected disabled>Choose Time</option>
                     <option value="9am">9am</option>
                     <option value="10am">10am</option>
@@ -199,42 +183,42 @@
               </div>
             </div>
             <div class="form-floating mb-3">
-              <select class="form-select" id="numOfPpl">
+              <select class="form-select" id="numOfPplB" name="numOfPplB">
                 <option selected disabled>Choose number of people</option>
                 <option value="10-20">10 to 20 (minimum 10)</option>
                 <option value="20-40">20 to 40 (minimum 20)</option>
               </select>
-              <label for="numOfPpl">Number of People</label>
+              <label for="numOfPplB">Number of People</label>
             </div>
             <div class="form-floating mb-3">
               <input
                 type="text"
                 class="form-control rounded-4"
                 id="eventTitle"
+                name="eventTitle"
                 placeholder="Title of the Event"
               />
               <label for="eventTitle">Title of the Event</label>
             </div>
-
             <div class="form-floating mb-3">
               <textarea
                 type="text"
                 class="form-control rounded-4"
-                id="instructions"
+                id="instructionsB"
+                name="instructionsB"
                 placeholder="Instructions"
                 style="height: 100px"
               ></textarea>
-              <label for="instructions"
-                >Instructions
-                <small class="text-muted">(Optional)</small></label
-              >
+              <label for="instructionsB">
+                Instructions
+                <small class="text-muted">(Optional)</small></label>
             </div>
-            <button
-              class="w-100 btn btn-lg rounded-4 btn-primary"
+            <input
+              class="w-100 btn btn-lg rounded-4 btn-secondary"
               type="submit"
-            >
-              Finish
-            </button>
+              name="submitB"
+              value="Complete"
+            />
           </form>
         </div>
       </div>
@@ -324,4 +308,86 @@
   </div>
 </body>
 
-<?php include "footer.php"; ?>
+<?php 
+
+  $conn = mysqli_connect("localhost","root","","reservations");
+        
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+
+  if (isset($_POST['submitA'])) {
+    $name = $_POST['nameA'];
+    $email = $_POST['emailA'];
+    $contact = $_POST['contactA'];
+    $date = $_POST['dateA'];    
+    $numOfPpl = $_POST['numOfPplA'];    
+    $instructions = $_POST['instructionsA'];
+
+    $insert = "INSERT INTO 
+                  tables(
+                    full_name, 
+                    email, 
+                    contact_no, 
+                    booked_date,
+                    numOfPpl,
+                    instructions) 
+                  VALUES (
+                    '". $name ."',
+                    '". $email ."',
+                    '". $contact ."',
+                    '". $date ."',
+                    '". $numOfPpl ."',
+                    '". $instructions ."'
+                  )";
+
+    if  ($conn->query($insert) == TRUE) {
+      echo "Successfully added to DB.";
+    } else {
+      echo "Failed to add to DB.";
+    }
+  }
+
+  if (isset($_POST['submitB'])) {
+    $name = $_POST['nameB'];
+    $email = $_POST['emailB'];
+    $contact = $_POST['contactB'];
+    $date = $_POST['dateB'];
+    $time = $_POST['time'];
+    $numOfPpl = $_POST['numOfPplB'];
+    $eventTitle = $_POST['eventTitle'];
+    $instructions = $_POST['instructionsB'];
+
+    $insert = "INSERT INTO 
+                  events(
+                    full_name, 
+                    email, 
+                    contact_no, 
+                    booked_date, 
+                    booked_time,
+                    numOfPpl,  
+                    event_title,
+                    instructions) 
+                  VALUES (
+                    '". $name ."',
+                    '". $email ."',
+                    '". $contact ."',
+                    '". $date ."',
+                    '". $time ."',
+                    '". $numOfPpl ."',
+                    '". $eventTitle ."',
+                    '". $instructions ."'
+                  )";
+
+    if  ($conn->query($insert) == TRUE) {
+      echo "Successfully added to DB.";
+    } else {
+      echo "Failed to add to DB.";
+    }
+  }
+
+  $conn->close();
+
+  include "footer.php"; 
+  
+?>
