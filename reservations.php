@@ -342,7 +342,8 @@
                   )";
 
     if  ($conn->query($insert) == TRUE) {
-      echo "Successfully added to DB.";
+      // echo "Successfully added to DB.";
+      echo '<script>window.location = "http://localhost/LasapManila/reserved-details.php" </script>';
     } else {
       echo "Failed to add to DB.";
     }
@@ -380,7 +381,8 @@
                   )";
 
     if  ($conn->query($insert) == TRUE) {
-      echo "Successfully added to DB.";
+      // echo "Successfully added to DB.";
+      echo '<script>window.location = "http://localhost/LasapManila/reserved-details.php" </script>';
     } else {
       echo "Failed to add to DB.";
     }
