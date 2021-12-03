@@ -9,10 +9,10 @@
 
 <body>
   <div class="container pt-5">
-    <h1 class="mt-5 mb-4 pb-3 border-bottom">About</h1>
+    <h1 class="mt-5 mb-4 pb-3 border-bottom">About <span class="text-muted">(The Team)</span></h1>
     <div class="row featurette">
       <div class="col-md-7">
-        <h3 class="featurette-heading">The Team.</h3>
+        <!-- <h3 class="featurette-heading">The Team.</h3> -->
         <p class="lead">
           We are Information Technology students from University of Santo Tomas,
           specializing in Web and Mobile Development.

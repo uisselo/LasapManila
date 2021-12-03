@@ -19,3 +19,7 @@
   align-self: center;
   margin: 0 10px;
 }
+
+nav .nav-tabs li a {
+  color: white !important;
+}

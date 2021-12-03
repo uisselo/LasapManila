@@ -17,7 +17,9 @@
           <p class="lead text-white">
             Experience the best of Filipino cuisine.
           </p>
-          <a class="btn btn-outline-light" href="reservations.php">Reserve Now</a>
+          <a class="btn btn-outline-light" href="reservations.php"
+            >Reserve Now</a
+          >
         </div>
       </div>
     </div>
@@ -33,11 +35,14 @@
         <div class="h-100 p-5 bg-light border">
           <h2>Our Story</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam,
-            diam sed porta efficitur, nibh ipsum laoreet eros, at dictum diam erat
-            ut magna. Proin mattis erat at mi finibus, id blandit augue
-            sollicitudin. In vitae nisl quis sem consequat eleifend. Morbi eget
-            lectus sit amet justo pharetra dapibus at.
+            Lasap Manila is Founded by Chef Lance Tan, who serves local Filipino
+            cuisine made from scratch using only the best and freshest
+            ingredients. It offers surprising flavor combinations that challenge
+            the adventurous plate desiring cuisine beyond mainstream offerings.
+            The Elegant Filipino Restaurant Located in Bonifacio Global City.
+            The restaurant is known to offer delicious food in an intimate and
+            relaxing environment that can be enjoyed by singles, couples,
+            friends and family.
           </p>
           <a class="btn btn-outline-secondary" type="button" href="about.php">
             Learn More
@@ -59,7 +64,9 @@
           />
           <div>
             <h4 class="fw-bold mb-0">Location</h4>
-            <p>123, Lorem Ipsum St.,<br />Bonifacio Global City, Metro Manila</p>
+            <p>
+              123, Lorem Ipsum St.,<br />Bonifacio Global City, Metro Manila
+            </p>
           </div>
         </div>
         <div class="d-flex align-items-start px-5">
@@ -85,9 +92,9 @@
           <div>
             <h4 class="fw-bold mb-0">Contact</h4>
             <p>
-                hello@lasapmanila.com<br />
-                (02) 1234 5678
-              </p>
+              hello@lasapmanila.com<br />
+              (02) 1234 5678
+            </p>
           </div>
         </div>
       </div>

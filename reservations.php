@@ -227,7 +227,7 @@
   <div class="container pt-5">
     <h1 class="mt-5 pb-3 border-bottom">Reservations</h1>
     <!-- Section 1 -->
-    <div class="row align-items-md-center mt-4">
+    <div class="row align-items-md-center mt-2 g-3">
       <div class="col-md-6">
         <div class="h-100 p-5 bg-light border">
           <h2>Book a Table</h2>
