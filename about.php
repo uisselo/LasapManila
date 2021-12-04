@@ -46,11 +46,20 @@
           |
           <a href="https://github.com/uisselo" class="link-secondary">GitHub</a>
         </p>
-        <h6>Hazel Yu</h6>
+        <h6>Hazel Anne Yu</h6>
         <p>
-          Proficient in Javascript frameworks for building websites and mobile
-          applications such as React and Angular. Interests include watching
-          movies, listening to music, and playing online games.
+          Have Knowledge in Java, Visual Basic, C++, PHP, Python and React Native Framework.
+          Interests include watching series, movies, listening to music, and reading books.
+        
+        </p>
+           <p>
+          <a
+            href="https://www.linkedin.com/in/hazel-anne-o-yu"
+            class="link-secondary"
+            >LinkedIn</a
+          >
+          |
+          <a href="https://github.com/hazeeelanne" class="link-secondary">GitHub</a>
         </p>
       </div>
       <div class="col-md-5">
