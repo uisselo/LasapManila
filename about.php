@@ -20,7 +20,7 @@
         <h6>Carl Dagañgon</h6>
         <p>
           Advanced knowledge in Programming languages such as Java, JavaScript, 
-          PHP, Python, React Native Framework. Loves the beach, watch tv series and playing games.
+          PHP, Python, React Native Framework. Loves the beach, watching tv series and playing games.
         </p>
         <p>
           <a
